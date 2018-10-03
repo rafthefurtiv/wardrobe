@@ -1,3 +1,24 @@
 page-home {
+    .center {
+        margin: auto;
+        width: 60%;
+        padding: 5px;
+        text-align: center;
+    }
 
+    .low {
+        margin-top: 10%;
+    }
+
+    .minibuttonclass {
+        width:10%; 
+        height: 10%; 
+        padding: 0px;
+        //display: block;
+        margin-bottom: 90px;
+    }
+
+    .macro {
+        margin-top: -55px;
+    }
 }

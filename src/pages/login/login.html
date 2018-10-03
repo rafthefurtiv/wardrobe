@@ -1,0 +1,57 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title style="margin-left: 0">LOGIN</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+
+
+
+<ion-content padding>
+
+  
+  <form (ngSubmit)="logIn()" [formGroup]="loginForm">
+
+  <ion-input style="margin-bottom: 0px" placeholder="EMAIL" class="login-button" text-center type="email" required formControlName="email" name="credentials"></ion-input>
+  <p *ngIf="loginError.emailError != ''" class="isa_error near">{{loginError.emailError}}</p>
+
+    <div>
+  <ion-input style="margin-bottom: 0px" placeholder="PASSWORD" class="login-button" text-center type="password" required formControlName="password" name="credentials"></ion-input>
+  <p *ngIf="loginError.passwordError != ''" class="isa_error near">{{loginError.passwordError}}</p>
+  </div>  
+
+  <button style="margin-top: 150px;" ion-button type="submit" secondar class="button button-block">Log In</button>
+
+
+    </form>
+
+    <footer style="color: rgb(180, 180, 180);">Developed by Raffaele Barbato</footer>
+
+
+</ion-content>
+
+
+<style>/*
+ion-content {background-color:rgba(2, 119, 189, 0.1);}
+*/
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    width: 100%;
+    /*height: 50px;*/
+  }
+
+ion-header {background-color:rgba(3, 155, 229, 1);}
+
+</style>
