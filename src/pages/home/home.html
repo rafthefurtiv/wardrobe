@@ -10,6 +10,11 @@
 <ion-content padding>
   <h3 style="text-align: center">Choose your look!</h3>
 
+
+  <p>{{prova}}</p>
+
+  <p>Prova2: {{prova2.name}}</p>
+
   <div style="align-content: center" class="center low">
 <div>
   <button class="minibuttonclass" ion-button secondary menuToggle><img src="assets/s_arr.png"></button>
@@ -36,6 +41,9 @@
 </div>
 
 <button style="margin-top: 30px" ion-button secondary (click)="save()" >Toggle Menu</button>
+
+<button style="margin-top: 30px" ion-button secondary (click)="saveStorage()" >Save</button>
+<button style="margin-top: 30px" ion-button secondary (click)="loadStorage()" >Load</button>
 </div>
   
 

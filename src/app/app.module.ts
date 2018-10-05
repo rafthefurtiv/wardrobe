@@ -34,6 +34,9 @@ import { AuthServiceProvider } from '../providers/auth-service/auth-service';
 //import { StorageServiceProvider } from '../providers/storage-service/storage-service';
 import { File } from '@ionic-native/file';
 
+import { IonicStorageModule } from '@ionic/storage';
+
+
 
 @NgModule({
   declarations: [
@@ -51,6 +54,7 @@ import { File } from '@ionic-native/file';
     HttpModule,
     AngularFireDatabaseModule,
     HttpClientModule,
+    IonicStorageModule.forRoot(),
     AngularFireStorageModule
   ],
   bootstrap: [IonicApp],
